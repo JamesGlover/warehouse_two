@@ -1,15 +1,16 @@
 class Well < ActiveRecord::Base
   include ResourceTools
-  
+
   def self.link_resources(resource_object)
   end
-  
+
   def self.map_internal_to_external_attributes
     # Internal DB column => External resource method
     {
       :uuid                    => :uuid,
       :internal_id             => :internal_id,
       :name                    => :name,
+      :display_name            => :display_name,
       :map                     => :map,
       :plate_barcode           => :plate_barcode,
       :plate_barcode_prefix    => :plate_barcode_prefix,

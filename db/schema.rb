@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111214114129) do
+ActiveRecord::Schema.define(:version => 20120413122808) do
 
   create_table "aliquots", :primary_key => "dont_use_id", :force => true do |t|
     t.string   "uuid",                   :limit => 36, :null => false
@@ -1706,6 +1706,7 @@ ActiveRecord::Schema.define(:version => 20111214114129) do
     t.string   "genotyping_status"
     t.string   "genotyping_snp_plate_id"
     t.datetime "inserted_at"
+    t.string   "display_name"
   end
 
   add_index "wells", ["buffer_volume"], :name => "index_wells_on_buffer_volume"

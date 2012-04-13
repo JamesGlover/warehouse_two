@@ -7,6 +7,7 @@ Feature: Update Wells
       [{
           "well": {
             "name": "Test well",
+            "display_name": "DN22409K:F2",
             "sample_internal_id": 2,
             "created_at": "2011-03-06T19:40:47+00:00",
             "pico_pass": "ungraded",
@@ -37,6 +38,7 @@ Feature: Update Wells
     When I connect to the "Well" resource and save the data
     Then Well "11111111-1111-1111-1111-111111111111" in the warehouse should contain:
       | name                    | Test well                            |
+      | display_name            | DN22409K:F2                          |
       | sample_internal_id      | 2                                    |
       | created                 | 2011-03-06 19:40:47 UTC              |
       | pico_pass               | ungraded                             |
@@ -66,6 +68,7 @@ Feature: Update Wells
       [{
           "well": {
             "name": "Test well",
+            "display_name": "DN22409K:F2",
             "sample_internal_id": 2,
             "created_at": "2011-03-06T19:40:47+00:00",
             "pico_pass": "passed",
@@ -96,6 +99,7 @@ Feature: Update Wells
     When I connect to the "Well" resource and save the data
     Then Well "11111111-1111-1111-1111-111111111111" in the warehouse should contain:
       | name                    | Test well                            |
+      | display_name            | DN22409K:F2                          |
       | sample_internal_id      | 2                                    |
       | created                 | 2011-03-06 19:40:47 UTC              |
       | pico_pass               | passed                               |
@@ -131,6 +135,7 @@ Feature: Update Wells
       [{
           "well": {
             "name": "Test well",
+            "display_name": "DN22409K:F2",
             "sample_internal_id": 2,
             "created_at": "2011-03-06T19:40:47+00:00",
             "pico_pass": "passed",
@@ -161,6 +166,7 @@ Feature: Update Wells
     When I connect to the "Well" resource and save the data
     Then Well "11111111-1111-1111-1111-111111111111" in the warehouse should contain:
       | name                    | Test well                            |
+      | display_name            | DN22409K:F2                          |
       | sample_internal_id      | 2                                    |
       | created                 | 2011-03-06 19:40:47 UTC              |
       | pico_pass               | passed                               |
